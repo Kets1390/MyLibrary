@@ -242,4 +242,12 @@ public class M_utils {
             }
         }
     }
+    public int dpToPx(int dp) {
+        DisplayMetrics displayMetrics = _Context.getResources().getDisplayMetrics();
+        return Math.round(dp * (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
+    }
+    public int pxToDp(int px) {
+        DisplayMetrics displayMetrics = _Context.getResources().getDisplayMetrics();
+        return Math.round(px / (displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT));
+    }
 }
