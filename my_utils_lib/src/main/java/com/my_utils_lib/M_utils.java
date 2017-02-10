@@ -64,7 +64,7 @@ public class M_utils {
 
         }
         if (ShowMsg) {
-            ShowToastMSG("No internet connection", tostLen_short);
+            ShowToastMSG("No internet connection.", tostLen_short);
         }
         return false;
     }
